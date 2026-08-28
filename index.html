@@ -1,244 +1,737 @@
-<!-- ========================================================== -->
-<!-- ============ NUEVA SECCIÓN: CHOCOTEJA DE CAÑIHUA ========= -->
-<!-- ========================================================== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choconutri · Chocolates artesanales</title>
 
-<hr>
+    <!-- Font Awesome (íconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-<h2>🌾 Chocoteja de Cañihua</h2>
+    <style>
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center; background: #fcf7f2; border-radius: 28px; padding: 30px; margin: 10px 0 20px;">
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+            background: #fdf6f0;
+            color: #3d2b1f;
+            padding: 16px;
+            line-height: 1.6;
+        }
 
-    <!-- Imagen del producto (con las medidas que pones en tu captura) -->
-    <div style="flex: 1; min-width: 200px; text-align: center;">
-        <img archivo_00000000f5f8820e9ca8655f192e5081.png="https://placehold.co/600x600/f0e2d6/5a3420?text=Chocoteja+Cañihua" 
-             alt="Chocoteja de Cañihua" 
-             style="width: 100%; max-width: 280px; border-radius: 24px; aspect-ratio: 1/1; object-fit: cover; background: #f0e2d6; box-shadow: 0 4px 20px rgba(0,0,0,0.06);">
-        
-        <!-- Medidas que mencionas en tu captura -->
-        <div style="display: flex; justify-content: center; gap: 30px; margin-top: 12px; font-size: 0.9rem; color: #6b4b36;">
-            <span>📏 12 cm</span>
-            <span>📐 3.5 cm</span>
-        </div>
-    </div>
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 32px;
+            padding: 30px 24px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+        }
 
-    <!-- Información del producto -->
-    <div style="flex: 2; min-width: 250px;">
-        <span class="tag">NUEVO</span>
-        <h3 style="margin: 6px 0 4px; font-size: 1.8rem;">Cajá Diamante</h3>
-        <p style="font-size: 1.1rem; color: #5a3f2c;">
-            <strong>Hecho con cañihua andina</strong> · Hecho en Perú
-        </p><!-- ========================================================== -->
-<!-- ============ CHOCOLATES DE CUADRADO (DETALLE) ============ -->
-<!-- ========================================================== -->
+        /* ===== HEADER ===== */
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 10px;
+        }
 
-<hr>
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #4a2c1a;
+        }
+        h1 span {
+            background: #f5e1d0;
+            padding: 0 10px;
+            border-radius: 12px;
+        }
 
-<h2>🍫 Chocolates de Cuadrado</h2>
+        .subtitulo {
+            font-size: 1.1rem;
+            color: #6b4b36;
+            margin-top: 4px;
+        }
 
-<div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center; background: #fcf7f2; border-radius: 28px; padding: 30px; margin: 10px 0 20px;">
+        /* ===== BOTONES SOCIALES ===== */
+        .social-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
 
-    <!-- Imagen del producto -->
-    <div style="flex: 1; min-width: 200px; text-align: center;">
-        <img archivo_00000000bffc820e9b765b4347e53fc4.png="https://placehold.co/600x600/f0e2d6/5a3420?text=Cuadrado+Frutos+Secos" 
-             alt="Chocolates de Cuadrado con frutos secos" 
-             style="width: 100%; max-width: 280px; border-radius: 24px; aspect-ratio: 1/1; object-fit: cover; background: #f0e2d6; box-shadow: 0 4px 20px rgba(0,0,0,0.06);">
-        
-        <!-- Medidas -->
-        <div style="display: flex; justify-content: center; gap: 30px; margin-top: 12px; font-size: 0.9rem; color: #6b4b36;">
-            <span>📏 12 cm</span>
-            <span>📐 3.5 cm</span>
-        </div>
-    </div>
+        .social-buttons a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.25s ease;
+            color: #fff;
+        }
+        .social-buttons a i {
+            font-size: 1.1rem;
+        }
+        .social-buttons a:hover {
+            transform: scale(1.05);
+        }
 
-    <!-- Información del producto -->
-    <div style="flex: 2; min-width: 250px;">
-        <span class="tag">CRUJIENTE · NUTRITIVO</span>
-        <h3 style="margin: 6px 0 4px; font-size: 1.8rem;">Con relleno de frutos secos</h3>
-        <p style="font-size: 1.1rem; color: #5a3f2c;">
-            <strong>Con frutos secos seleccionados</strong> · Fuente de energía, fibra y minerales
-        </p>
-        <p style="margin: 12px 0; color: #4a3424;">
-            Chocolate de calidad con un sabor que te hace bien. Presentación ideal para regalar con empaque ecológico y sostenible.
-        </p>
-        
-        <<!-- ========================================================== -->
-<!-- ============ CHOCOLATES DE CUADRADO (DETALLE) ============ -->
-<!-- ========================================================== -->
+        .btn-instagram {
+            background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+        }
+        .btn-facebook {
+            background: #1877f2;
+        }
+        .btn-tiktok {
+            background: #000;
+        }
+        .btn-whatsapp {
+            background: #25d366;
+        }
 
-<hr>
+        /* ===== WHATSAPP FLOTANTE ===== */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #25d366;
+            color: #fff;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.4);
+            text-decoration: none;
+            z-index: 999;
+            transition: all 0.25s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
 
-<h2>🍫 Chocolates de Cuadrado</h2>
+        /* ===== TÍTULOS ===== */
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 35px;
+            margin-bottom: 10px;
+            color: #5a3420;
+            border-left: 6px solid #c47a4a;
+            padding-left: 16px;
+        }
 
-<div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center; background: #fcf7f2; border-radius: 28px; padding: 30px; margin: 10px 0 20px;">
+        h3 {
+            font-size: 1.3rem;
+            margin: 10px 0 4px;
+            color: #6b3f28;
+        }
 
-    <!-- Imagen del producto -->
-    <div style="flex: 1; min-width: 200px; text-align: center;">
-        <img archivo_00000000bffc820e9b765b4347e53fc4.png="https://placehold.co/600x600/f0e2d6/5a3420?text=Cuadrado+Frutos+Secos" 
-             alt="Chocolates de Cuadrado con frutos secos" 
-             style="width: 100%; max-width: 280px; border-radius: 24px; aspect-ratio: 1/1; object-fit: cover; background: #f0e2d6; box-shadow: 0 4px 20px rgba(0,0,0,0.06);">
-        
-        <!-- Medidas -->
-        <div style="display: flex; justify-content: center; gap: 30px; margin-top: 12px; font-size: 0.9rem; color: #6b4b36;">
-            <span>📏 12 cm</span>
-            <span>📐 3.5 cm</span>
-        </div>
-    </div>
+        .tag {
+            display: inline-block;
+            background: #c47a4a;
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.7rem;
+            padding: 3px 14px;
+            border-radius: 30px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
 
-    <!-- Información del producto -->
-    <div style="flex: 2; min-width: 250px;">
-        <span class="tag">CRUJIENTE · NUTRITIVO</span>
-        <h3 style="margin: 6px 0 4px; font-size: 1.8rem;">Con relleno de frutos secos</h3>
-        <p style="font-size: 1.1rem; color: #5a3f2c;">
-            <strong>Con frutos secos seleccionados</strong> · Fuente de energía, fibra y minerales
-        </p>
-        <p style="margin: 12px 0; color: #4a3424;">
-            Chocolate de calidad con un sabor que te hace bien. Presentación ideal para regalar con empaque ecológico y sostenible.
-        </p> <!-- ========================================================== -->
-<!-- ============ ¿POR QUÉ ELEGIR CHOCONUTRI? (ACTUALIZADO) === -->
-<!-- ========================================================== -->
+        hr {
+            margin: 35px 0 20px;
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to right, #f0e2d6, #c47a4a, #f0e2d6);
+            border-radius: 10px;
+        }
 
-<h2>✨ ¿Por qué elegir Choconutri?</h2>
+        /* ===== MISIÓN Y VISIÓN ===== */
+        .mv-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 20px;
+        }
+        .mv-card {
+            background: #fcf7f2;
+            padding: 20px 22px;
+            border-radius: 20px;
+        }
+        .mv-card h3 {
+            margin-top: 0;
+        }
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px; margin: 16px 0 30px;">
-    <div style="background: #fcf7f2; padding: 18px 16px; border-radius: 18px; text-align: center; font-weight: 500; border: 1px solid #f0e2d6;">
-        🍫 Elaboración artesanal
-    </div>
-    <div style="background: #fcf7f2; padding: 18px 16px; border-radius: 18px; text-align: center; font-weight: 500; border: 1px solid #f0e2d6;">
-        🎨 Sabores creativos
-    </div>
-    <div style="background: #fcf7f2; padding: 18px 16px; border-radius: 18px; text-align: center; font-weight: 500; border: 1px solid #f0e2d6;">
-        🎁 Presentaciones para regalar
-    </div>
-    <div style="background: #fcf7f2; padding: 18px 16px; border-radius: 18px; text-align: center; font-weight: 500; border: 1px solid #f0e2d6;">
-        🌱 Empaque ecológico
-    </div>
-    <div style="background: #fcf7f2; padding: 18px 16px; border-radius: 18px; text-align: center; font-weight: 500; border: 1px solid #f0e2d6;">
-        🚚 Delivery disponible
-    </div>
-    <div style="background: #fcf7f2; padding: 18px 16px; border-radius: 18px; text-align: center; font-weight: 500; border: 1px solid #f0e2d6;">
-        💛 Hecho con amor en cada detalle
-    </div>
-    <div style="background: #fcf7f2; padding: 18px 16px; border-radius: 18px; text-align: center; font-weight: 500; border: 1px solid #f0e2d6;">
-        🌎 Ingredientes reales y nutritivos
-    </div>
-</div>
-        
-        <!-- Ingredientes destacados -->
-        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0;">
-            <span style="background: #f0e2d6; padding: 4px 14px; border-radius: 30px; font-size: 0.85rem;">🌰 Almendras</span>
-            <span style="background: #f0e2d6; padding: 4px 14px; border-radius: 30px; font-size: 0.85rem;">🥜 Nueces</span>
-            <span style="background: #f0e2d6; padding: 4px 14px; border-radius: 30px; font-size: 0.85rem;">🌱 Pistachos</span>
-            <span style="background: #f0e2d6; padding: 4px 14px; border-radius: 30px; font-size: 0.85rem;">🌰 Avellanas</span>
-            <span style="background: #f0e2d6; padding: 4px 14px; border-radius: 30px; font-size: 0.85rem;">🫐 Arándanos</span>
-        </div>
-        
-        <div style="background: #f0e2d6; display: inline-block; padding: 8px 24px; border-radius: 40px; font-weight: 700; font-size: 1.5rem; color: #a55d34;">
-            S/ 10 · Caja de 4
-        </div>
-    </div>
-</div>
+        /* ===== PRODUCTOS (GALERÍA) ===== */
+        .productos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin-top: 16px;
+        }
 
-<!-- Frase destacada de Chocolates de Cuadrado -->
-<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 10px 0 20px;">
-    <div style="background: #f5ece4; padding: 14px 24px; border-radius: 40px; font-weight: 600; color: #4a2c1a; border: 1px solid #e8d8cc;">
-        ❤️ Amor y buenos ingredientes
-    </div>
-    <div style="background: #f5ece4; padding: 14px 24px; border-radius: 40px; font-weight: 600; color: #4a2c1a; border: 1px solid #e8d8cc;">
-        🌟 Pequeños bocados, GRANDES BENEFICIOS
-    </div>
-</div>
-        </div>
-        
-        <div style="background: #f0e2d6; display: inline-block; padding: 8px 24px; border-radius: 40px; font-weight: 700; font-size: 1.5rem; color: #a55d34;">
-            S/ 10 · Caja de 4
-        </div>
-    </div>
-</div>
+        .producto-card {
+            background: #fcf7f2;
+            border-radius: 20px;
+            padding: 18px 18px 22px;
+            border: 1px solid #f0e2d6;
+            text-align: center;
+            transition: 0.2s ease;
+        }
+        .producto-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+            border-color: #dbb8a2;
+        }
 
-<!-- Frase destacada de Chocolates de Cuadrado -->
-<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 10px 0 20px;">
-    <div style="background: #f5ece4; padding: 14px 24px; border-radius: 40px; font-weight: 600; color: #4a2c1a; border: 1px solid #e8d8cc;">
-        ❤️ Amor y buenos ingredientes
-    </div>
-    <div style="background: #f5ece4; padding: 14px 24px; border-radius: 40px; font-weight: 600; color: #4a2c1a; border: 1px solid #e8d8cc;">
-        🌟 Pequeños bocados, GRANDES BENEFICIOS
-    </div>
-</div>
-        <p style="margin: 12px 0; color: #4a3424;">
-            Presentación creativa con cañihua, inspirada en los sabores e ingredientes peruanos.
-        </p>
-        <div style="background: #f0e2d6; display: inline-block; padding: 8px 24px; border-radius: 40px; font-weight: 700; font-size: 1.5rem; color: #a55d34;">
-            S/ 10 · Caja de 4
-        </div>
-    </div>
-</div>
+        .producto-card img {
+            width: 100%;
+            max-width: 260px;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 18px;
+            background: #f0e2d6;
+            display: block;
+            margin: 0 auto 10px;
+        }
 
+        .producto-card .precio {
+            font-weight: 700;
+            color: #a55d34;
+            font-size: 1.15rem;
+            background: #f0e2d6;
+            display: inline-block;
+            padding: 2px 18px;
+            border-radius: 40px;
+            margin-top: 6px;
+        }
 
-<!-- ========================================================== -->
-<!-- ============ ¿POR QUÉ ELEGIR CHOCONUTRI? ================= -->
-<!-- ========================================================== -->
+        .beneficios {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px 16px;
+            margin: 10px 0 4px;
+            font-size: 0.9rem;
+        }
+        .beneficios li::before {
+            content: "✓ ";
+            color: #c47a4a;
+            font-weight: 700;
+        }
 
-<h2>✨ ¿Por qué elegir Choconutri?</h2>
+        /* ===== DETALLE DE PRODUCTOS ===== */
+        .detalle-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+            margin-top: 16px;
+        }
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 16px 0 30px;">
-    <div style="background: #fcf7f2; padding: 18px 16px; border-radius: 18px; text-align: center; font-weight: 500; border: 1px solid #f0e2d6;">
-        🍫 Elaboración artesanal
-    </div>
-    <div style="background: #fcf7f2; padding: 18px 16px; border-radius: 18px; text-align: center; font-weight: 500; border: 1px solid #f0e2d6;">
-        🎨 Sabores creativos
-    </div>
-    <div style="background: #fcf7f2; padding: 18px 16px; border-radius: 18px; text-align: center; font-weight: 500; border: 1px solid #f0e2d6;">
-        🎁 Presentaciones para regalar
-    </div>
-    <div style="background: #fcf7f2; padding: 18px 16px; border-radius: 18px; text-align: center; font-weight: 500; border: 1px solid #f0e2d6;">
-        🌱 Empaque ecológico
-    </div>
-    <div style="background: #fcf7f2; padding: 18px 16px; border-radius: 18px; text-align: center; font-weight: 500; border: 1px solid #f0e2d6;">
-        🚚 Delivery disponible
-    </div>
-</div>
+        .detalle-item {
+            background: #fcf7f2;
+            border-radius: 20px;
+            padding: 20px;
+            border: 1px solid #f0e2d6;
+            text-align: center;
+        }
 
+        .detalle-item img {
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 16px;
+            background: #f0e2d6;
+            display: block;
+            margin: 0 auto 10px;
+        }
 
-<!-- ========================================================== -->
-<!-- ============ PROPUESTA DE VALOR ========================== -->
-<!-- ========================================================== -->
+        .detalle-item .medidas {
+            font-size: 0.85rem;
+            color: #6b4b36;
+            margin: 6px 0;
+        }
 
-<div style="background: #f5ece4; padding: 24px 30px; border-radius: 24px; text-align: center; margin: 20px 0 30px; border-left: 6px solid #c47a4a;">
-    <p style="font-size: 1.3rem; font-weight: 600; color: #4a2c1a; margin: 0;">
-        "Choconutri: chocotejas artesanales que combinan sabor, creatividad y un toque especial en cada detalle."
-    </p>
-</div>
+        .detalle-item .precio-grande {
+            background: #f0e2d6;
+            display: inline-block;
+            padding: 4px 20px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #a55d34;
+            margin-top: 6px;
+        }
 
+        .ingredientes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: center;
+            margin: 8px 0;
+        }
+        .ingredientes span {
+            background: #f0e2d6;
+            padding: 3px 12px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+        }
 
-<!-- ========================================================== -->
-<!-- ============ LLAMADA A LA ACCIÓN (PEDIDO) ================ -->
-<!-- ========================================================== -->
+        /* ===== FRASES DESTACADAS ===== */
+        .frases {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            margin: 16px 0 8px;
+        }
+        .frases div {
+            background: #f5ece4;
+            padding: 10px 22px;
+            border-radius: 40px;
+            font-weight: 600;
+            color: #4a2c1a;
+            border: 1px solid #e8d8cc;
+            font-size: 0.95rem;
+        }
 
-<h2>🛍️ ¡Haz tu pedido!</h2>
+        /* ===== ¿POR QUÉ ELEGIRNOS? ===== */
+        .razones-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            margin: 14px 0 20px;
+        }
+        .razones-grid div {
+            background: #fcf7f2;
+            padding: 14px 12px;
+            border-radius: 16px;
+            text-align: center;
+            font-weight: 500;
+            border: 1px solid #f0e2d6;
+            font-size: 0.95rem;
+        }
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; background: #fcf7f2; padding: 24px 30px; border-radius: 24px; margin: 10px 0 20px;">
+        /* ===== PROPUESTA ===== */
+        .propuesta {
+            background: #f5ece4;
+            padding: 18px 24px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 16px 0 24px;
+            border-left: 6px solid #c47a4a;
+        }
+        .propuesta p {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #4a2c1a;
+            margin: 0;
+        }
 
-    <div>
-        <p style="font-size: 1.1rem; margin: 0;">
-            <strong>Caja de 4 unidades</strong> por <span style="font-size: 1.8rem; font-weight: 800; color: #a55d34;">S/ 10.00</span>
-        </p>
-        <p style="color: #5a3f2c; margin: 4px 0 0;">
-            🚚 Realizamos delivery · <span style="background: #e8f5e9; padding: 2px 12px; border-radius: 20px;">Envíos a todo Lima</span>
-        </p>
-    </div>
+        /* ===== PEDIDO ===== */
+        .pedido-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+            justify-content: space-between;
+            background: #fcf7f2;
+            padding: 20px 24px;
+            border-radius: 20px;
+            margin: 10px 0 16px;
+        }
 
-    <!-- Botón de WhatsApp grande y llamativo -->
-    <a href="https://wa.me/51913955865?text=¡Hola%20Choconutri!%20Quiero%20pedir%20una%20caja%20de%20Chocoteja%20de%20Cañihua%20🍫" 
-       target="_blank" 
-       style="display: inline-flex; align-items: center; gap: 12px; background: #25d366; color: white; padding: 14px 32px; border-radius: 60px; text-decoration: none; font-weight: 700; font-size: 1.2rem; transition: 0.2s ease; box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);">
-        <i class="fab fa-whatsapp" style="font-size: 1.6rem;"></i> 
-        Pedir por WhatsApp
+        .btn-whatsapp-grande {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #25d366;
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: 0.2s ease;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+        }
+        .btn-whatsapp-grande:hover {
+            transform: scale(1.04);
+        }
+        .btn-whatsapp-grande i {
+            font-size: 1.4rem;
+        }
+
+        /* ===== PIE DE PÁGINA ===== */
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+        .footer-social a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #5a3420;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 14px;
+            border-radius: 30px;
+            background: #f5ece4;
+            transition: 0.2s ease;
+            font-size: 0.9rem;
+        }
+        .footer-social a:hover {
+            background: #e8d8cc;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 14px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .mv-grid {
+                grid-template-columns: 1fr;
+            }
+            .detalle-grid {
+                grid-template-columns: 1fr;
+            }
+            .productos-grid {
+                grid-template-columns: 1fr;
+            }
+            .producto-card img {
+                max-width: 200px;
+            }
+            .header-flex {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .social-buttons a {
+                padding: 6px 12px;
+                font-size: 0.75rem;
+            }
+            .pedido-box {
+                flex-direction: column;
+                text-align: center;
+            }
+            .btn-whatsapp-grande {
+                width: 100%;
+                justify-content: center;
+            }
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.8rem;
+                bottom: 16px;
+                right: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== WHATSAPP FLOTANTE ===== -->
+    <a href="https://wa.me/51913955865?text=¡Hola%20Choconutri!%20Quiero%20hacer%20un%20pedido%20🍫"
+       class="whatsapp-float"
+       target="_blank"
+       aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
     </a>
-</div>
-<a href="https://twitter.com/tu_usuario" target="_blank" class="btn-twitter" style="background:#000; color:white;">
-    <i class="fab fa-x-twitter"></i> Twitter
-</a>
-<!-- Teléfono de contacto -->
-<p style="text-align: center; color: #5a3f2c; font-size: 1rem; margin-top: -8px;">
-    📱 WhatsApp: <strong>913 955 865</strong>
-</p>
+
+    <!-- ===== CONTENEDOR ===== -->
+    <div class="container">
+
+        <!-- ===== HEADER ===== -->
+        <header class="header-flex">
+            <div>
+                <h1>🍫 <span>Choconutri</span></h1>
+                <p class="subtitulo">Chocolates artesanales · Hechos con amor y creatividad</p>
+            </div>
+
+            <div class="social-buttons">
+                <a href="https://instagram.com/tu_usuario" target="_blank" class="btn-instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://facebook.com/tu_pagina" target="_blank" class="btn-facebook">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://tiktok.com/@tu_usuario" target="_blank" class="btn-tiktok">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+                <a href="https://wa.me/51913955865?text=¡Hola%20Choconutri!%20Quiero%20hacer%20un%20pedido%20🍫"
+                   target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Pedir
+                </a>
+            </div>
+        </header>
+
+        <!-- ===== SOBRE CHOCONUTRI ===== -->
+        <section>
+            <h2>Sobre Choconutri</h2>
+            <p style="font-size:1.05rem;">
+                Choconutri es un emprendimiento dedicado a la elaboración y comercialización de
+                <strong>chocolates artesanales</strong>, combinando chocolate, creatividad e
+                ingredientes seleccionados para ofrecer productos deliciosos y atractivos.
+            </p>
+        </section>
+
+        <!-- ===== MISIÓN Y VISIÓN ===== -->
+        <div class="mv-grid">
+            <div class="mv-card">
+                <h3>🎯 Misión</h3>
+                <p>Ofrecer chocolates artesanales deliciosos, creativos y de calidad, elaborados con dedicación y amor, brindando a nuestros clientes una experiencia dulce, agradable y accesible.</p>
+            </div>
+            <div class="mv-card">
+                <h3>👁️ Visión</h3>
+                <p>Ser un emprendimiento reconocido por la calidad, labor y creatividad de nuestros chocolates, logrando posicionar a <strong>Choconutri</strong> como una marca preferida por jóvenes y estudiantes.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- GALERÍA DE PRODUCTOS (3 productos) -->
+        <!-- ========================================================== -->
+        <h2>🍬 Nuestros productos</h2>
+        <p style="color:#6b4b36; margin-bottom:6px;">Galería Choconutri</p>
+
+        <div class="productos-grid">
+
+            <!-- ===== PRODUCTO 1: CHOCOTEJA CORAZÓN DE CAFÉ ===== -->
+            <div class="producto-card">
+                <img src="https://placehold.co/600x600/f0e2d6/5a3420?text=Corazón+de+Café"
+                     alt="Chocoteja Corazón de Café" />
+                <span class="tag">NUEVO SABOR</span>
+                <h3>Chocoteja Corazón de Café</h3>
+                <p style="font-size:0.95rem; color:#5a3f2c;">
+                    Chocolate relleno con <strong>crema de café</strong>. Sabor intenso para jornadas de estudio.
+                </p>
+                <ul class="beneficios">
+                    <li>Relleno cremoso de café</li>
+                    <li>Sabor intenso a café</li>
+                    <li>Hecho con amor</li>
+                    <li>Energía para tus mejores días</li>
+                    <li>Ideal para estudiar</li>
+                </ul>
+                <div class="precio">S/ 10 · Caja de 4</div>
+            </div>
+
+            <!-- ===== PRODUCTO 2: CHOCOLATES DE CUADRADO ===== -->
+            <div class="producto-card">
+                <img src="https://placehold.co/600x600/f0e2d6/5a3420?text=Cuadrado+Frutos+Secos"
+                     alt="Chocolates de Cuadrado con frutos secos" />
+                <span class="tag">CRUJIENTE · NUTRITIVO</span>
+                <h3>Chocolates de Cuadrado</h3>
+                <p style="font-size:0.95rem; color:#5a3f2c;">
+                    <strong>Con relleno de frutos secos</strong> · Crujiente, nutritivo y delicioso.
+                </p>
+                <ul class="beneficios">
+                    <li>Frutos secos seleccionados</li>
+                    <li>Fuente de energía y fibra</li>
+                    <li>Chocolate de calidad</li>
+                    <li>Sabor que te hace bien</li>
+                </ul>
+                <div class="precio">S/ 10 · Caja de 4</div>
+            </div>
+
+            <!-- ===== PRODUCTO 3: CHOCOTEJA DE CAÑIHUA ===== -->
+            <div class="producto-card">
+                <img src="https://placehold.co/600x600/f0e2d6/5a3420?text=Chocoteja+Cañihua"
+                     alt="Chocoteja de Cañihua" />
+                <span class="tag">NUEVO</span>
+                <h3>Chocoteja de Cañihua</h3>
+                <p style="font-size:0.95rem; color:#5a3f2c;">
+                    Presentación creativa con <strong>cañihua andina</strong>, inspirada en sabores peruanos.
+                </p>
+                <ul class="beneficios">
+                    <li>Hecho con cañihua</li>
+                    <li>Hecho en Perú</li>
+                    <li>Presentación única</li>
+                    <li>Ingredientes reales</li>
+                </ul>
+                <div class="precio">S/ 10 · Caja de 4</div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- DETALLE DE PRODUCTOS (3 productos) -->
+        <!-- ========================================================== -->
+        <h2>📦 Conoce más de cada producto</h2>
+
+        <div class="detalle-grid">
+
+            <!-- ===== DETALLE 1: CORAZÓN DE CAFÉ ===== -->
+            <div class="detalle-item">
+                <img src="https://placehold.co/600x600/f0e2d6/5a3420?text=Corazón+Empaque"
+                     alt="Empaque Chocoteja Corazón de Café" />
+                <span class="tag">NUEVO SABOR</span>
+                <h3>Corazón de Café</h3>
+                <p style="font-size:0.9rem; color:#5a3f2c;">
+                    Chocolate relleno con crema de café.
+                </p>
+                <div class="medidas">📏 12 cm · 📐 3.5 cm</div>
+                <div class="precio-grande">S/ 10 · Caja de 4</div>
+                <div style="margin-top:6px; font-size:0.8rem; color:#6b4b36;">🍫 ChocoNutri®</div>
+            </div>
+
+            <!-- ===== DETALLE 2: CHOCOLATES DE CUADRADO ===== -->
+            <div class="detalle-item">
+                <img src="https://placehold.co/600x600/f0e2d6/5a3420?text=Cuadrado+Empaque"
+                     alt="Chocolates de Cuadrado" />
+                <span class="tag">CRUJIENTE · NUTRITIVO</span>
+                <h3>Chocolates de Cuadrado</h3>
+                <p style="font-size:0.9rem; color:#5a3f2c;">
+                    Con relleno de frutos secos.
+                </p>
+                <div class="medidas">📏 12 cm · 📐 3.5 cm</div>
+                <div class="ingredientes">
+                    <span>🌰 Almendras</span>
+                    <span>🥜 Nueces</span>
+                    <span>🌱 Pistachos</span>
+                    <span>🌰 Avellanas</span>
+                    <span>🫐 Arándanos</span>
+                </div>
+                <div class="precio-grande">S/ 10 · Caja de 4</div>
+                <div style="margin-top:6px; font-size:0.8rem; color:#6b4b36;">🌱 Empaque ecológico</div>
+            </div>
+
+            <!-- ===== DETALLE 3: CHOCOTEJA DE CAÑIHUA ===== -->
+            <div class="detalle-item">
+                <img src="https://placehold.co/600x600/f0e2d6/5a3420?text=Cañihua+Empaque"
+                     alt="Chocoteja de Cañihua" />
+                <span class="tag">NUEVO</span>
+                <h3>Cajá Diamante</h3>
+                <p style="font-size:0.9rem; color:#5a3f2c;">
+                    Hecho con cañihua andina.
+                </p>
+                <div class="medidas">📏 12 cm · 📐 3.5 cm</div>
+                <div class="precio-grande">S/ 10 · Caja de 4</div>
+                <div style="margin-top:6px; font-size:0.8rem; color:#6b4b36;">🇵🇪 Hecho en Perú</div>
+            </div>
+
+        </div>
+
+        <!-- Frases destacadas -->
+        <div class="frases">
+            <div>❤️ Amor y buenos ingredientes</div>
+            <div>🌟 Pequeños bocados, GRANDES BENEFICIOS</div>
+        </div>
+
+        <hr>
+
+        <!-- ========================================================== -->
+        <!-- ¿POR QUÉ ELEGIR CHOCONUTRI? -->
+        <!-- ========================================================== -->
+        <h2>✨ ¿Por qué elegir Choconutri?</h2>
+
+        <div class="razones-grid">
+            <div>🍫 Elaboración artesanal</div>
+            <div>🎨 Sabores creativos</div>
+            <div>🎁 Presentaciones para regalar</div>
+            <div>🌱 Empaque ecológico</div>
+            <div>🚚 Delivery disponible</div>
+            <div>💛 Hecho con amor en cada detalle</div>
+            <div>🌎 Ingredientes reales y nutritivos</div>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- PROPUESTA DE VALOR -->
+        <!-- ========================================================== -->
+        <div class="propuesta">
+            <p>
+                "Choconutri: chocotejas artesanales que combinan sabor, creatividad y un toque especial en cada detalle."
+            </p>
+        </div>
+
+        <!-- ========================================================== -->
+        <!-- LLAMADA A LA ACCIÓN - PEDIDO -->
+        <!-- ========================================================== -->
+        <h2>🛍️ ¡Haz tu pedido!</h2>
+
+        <div class="pedido-box">
+            <div>
+                <p style="font-size:1.1rem; margin:0;">
+                    <strong>Caja de 4 unidades</strong> por
+                    <span style="font-size:1.8rem; font-weight:800; color:#a55d34;">S/ 10.00</span>
+                </p>
+                <p style="color:#5a3f2c; margin:4px 0 0;">
+                    🚚 Realizamos delivery · <span style="background:#e8f5e9; padding:2px 12px; border-radius:20px;">Envíos a todo Lima</span>
+                </p>
+            </div>
+
+            <a href="https://wa.me/51913955865?text=¡Hola%20Choconutri!%20Quiero%20pedir%20una%20caja%20de%20chocolates%20🍫"
+               target="_blank"
+               class="btn-whatsapp-grande">
+                <i class="fab fa-whatsapp"></i>
+                Pedir por WhatsApp
+            </a>
+        </div>
+
+        <p style="text-align:center; color:#5a3f2c; font-size:1rem; margin-top:-6px;">
+            📱 WhatsApp: <strong>913 955 865</strong>
+        </p>
+
+        <!-- ========================================================== -->
+        <!-- PIE DE PÁGINA -->
+        <!-- ========================================================== -->
+        <hr>
+
+        <footer style="text-align:center; color:#7a5f4a; font-size:0.9rem; padding-top:10px;">
+            <p>© 2026 Choconutri · Hecho con 🍫 y dedicación</p>
+
+            <div class="footer-social">
+                <a href="https://instagram.com/tu_usuario" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://facebook.com/tu_pagina" target="_blank">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://tiktok.com/@tu_usuario" target="_blank">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+                <a href="https://wa.me/51913955865?text=¡Hola%20Choconutri!%20Quiero%20hacer%20un%20pedido%20🍫" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="mailto:choconutri@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i> Correo
+                </a>
+            </div>
+
+            <p style="font-size:0.8rem; opacity:0.7; margin-top:12px;">
+                📍 Lima, Perú · Hecho con ingredientes reales, para un sabor que nutre.
+            </p>
+        </footer>
+
+    </div>
+    <!-- ===== FIN CONTAINER ===== -->
+
+</body>
+</html>
